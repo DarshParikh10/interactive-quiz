@@ -1,0 +1,35 @@
+body {
+    background-color: #f1f5f8;
+}
+
+#quiz-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 20, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card {
+    padding: 20px;
+}
+
+/* Animation for score updates */
+@keyframes scoreUpdate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#score-display {
+    font-size: 1.5rem;
+    animation: scoreUpdate 0.3s ease-in-out;
+}
+
+/* Hint button style */
+.hint {
+    font-size: 0.9rem;
+    color: #007bff;
+    cursor: pointer;
+}
+.hint:hover {
+    text-decoration: underline;
+}
